@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单</title>
+</head>
+<body>
+    <!-- form 表单 -->
+    <!-- action 接收的url地址 -->
+    <form action="">
+        <!-- type text 文本 -->
+        用户名<input type="text"><br>
+        <!-- type password 密码 -->
+        密码<input type="password"><br>
+        <!-- type radio 单选按钮 checked 默认选择-->
+        性别：男 <input type="radio" name="sex" checked> 女<input type="radio" name="sex"><br>
+        <!-- type checkbox 复选框 -->
+        爱好：1 <input type="checkbox" name="hobby" checked>2 <input type="checkbox" name="hobby">3 <input type="checkbox" name="hobby">4 <input type="checkbox" name="hobby"><br>
+        <!-- type button 普通按钮 -->
+        <input type="button" value="获取">
+        <!-- type submmit 提交-->
+        <input type="submit">
+        <!-- type reset 重置 -->
+        <input type="reset"><br>
+        <!-- type file 文件域 -->
+        <input type="file"><br>
+        <!-- value 框中的值 -->
+        用户名<input type="text" value="请输入用户名"><br>
+        <!-- name 区别表单 -->
+        用户名<input type="text" name="username"><br>
+        <!-- label 点击文字选中 -->
+        <label>用户名 <input type="text"> </label><br>
+        <label for="id">用户名</label> <input type="text" id="id"><br>
+        <!-- textarea 文本域 -->
+        用户留言<textarea name="" id="" cols="30" rows="10"></textarea><br>
+        <!-- select 下拉选择 -->
+        <select name="" id="">
+            <option value="风">风</option>
+            <option value="火" selected>火</option>
+            <option value="水">水</option>
+            <option value="光">光</option>
+            <option value="暗">暗</option>
+        </select>
+    </form>
+</body>
+</html>
