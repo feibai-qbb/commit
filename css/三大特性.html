@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三大特性</title>
+    <style>
+        /* 层叠性，冲突时就近原则 */
+        div{
+            color: blue;
+        }
+        div{
+            color: firebrick;
+        }
+        /* 继承性 子承父业 text- font- line- color*/
+        /* 优先级 */
+    </style>
+</head>
+<body>
+    <div>
+        层叠性
+    </div>
+    <div>
+        <p>继承性</p>
+    </div>
+    <div>
+        <pre>
+            优先级
+            !important 在样式属性后面添加 无穷大
+            style行内  1000
+            id         0100
+            类，伪类    0010
+            标签        0001
+            继承，*     0000
+        </pre>
+    </div>
+</body>
+</html>

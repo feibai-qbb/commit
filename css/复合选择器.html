@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复合选择器</title>
+    <style>
+        /* 后代选择器 */
+        .nav a{
+            color: red;
+        }
+        /* 子元素选择器  只选择儿子*/
+        div>a{
+            color: rosybrown;
+        }
+        /* 交集选择器 */
+        p.class{
+            color:red;
+        }
+        /* 并集选择器 */
+        p,span{
+            color: blue;
+        }
+        /* 伪类选择器 */
+        /* :link 正常状态 :visited 已经访问过 :hover 悬浮 :active 点击*/
+    </style>
+</head>
+<body>
+    <div class="class">
+        <div class="nav">
+            <a href="#">内部</a>
+            <a href="#">内部</a>
+            <a href="#">内部</a>
+        </div>
+        <a href="#">外部</a>
+        <a href="#">外部</a>
+        <a href="#">外部</a>
+    </div>
+    <p class="class">红色</p>
+    <p class="class">红色</p>
+    <p class="class">红色</p>
+    <div class="class">红色</div>
+    <div class="class">红色</div>
+    <div class="class">红色</div>
+    <p>蓝色</p>
+    <p>蓝色</p>
+    <p>蓝色</p>
+    <span>蓝色</span>
+    <span>蓝色</span>
+    <span>蓝色</span>
+</body>
+</html>
