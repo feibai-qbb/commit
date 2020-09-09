@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            /* 边框的宽度 */
+            border-width: 1px;
+            /* 边框的样式  */
+            border-style: solid;
+            /* 边框的颜色 */
+            border-color: blue;
+            /* 圆角边框 */
+            border-radius: 10px;
+            /* 盒子阴影 */
+            box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.4) ;
+            /* 上边框top bottom left right */
+            border-top-style: solid;
+            /* 合并表格的边框 */
+            border-collapse: collapse;
+            /* 左内边距 */
+            padding-left: 20px;
+            /* padding 上 右 下 左 */
+            /* 会放大盒子 */
+        }
+        .nav{
+            width: 100%;
+            height: 41px;
+            background-color: #fff;
+            /* 上边框 */
+            border-top: 3px solid #ff8200;
+            /* 下边框 */
+            border-bottom: 1px solid #edeef0;
+        }
+        .nav a{
+            display: inline-block;
+            height: 41px;
+            /* 上下是0 左右20 */
+            padding: 0 20px;
+            line-height: 41px;
+            /* background-color: pink; */
+            color: #4c4c4c;
+            text-decoration: none;
+            font-size: 12px;
+        }
+        .nav a:hover{
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <!-- 组成 内容 边框border 内边距padding 外边距margin -->
+    <!-- 盒子的大小是 内容 内边距 边框三者之和 -->
+    <!-- 如果盒子没有宽度就不会撑开盒子 -->
+    <!-- margin overflew:hidden -->
+    <div>
+        闪烁之光
+    </div>
+    <!-- 练习 -->
+    <div class="nav">
+        <a href="">风</a>
+        <a href="">火</a>
+        <a href="">水</a>
+        <a href="">光</a>
+        <a href="">暗</a> 
+    </div>
+</body>
+</html>
