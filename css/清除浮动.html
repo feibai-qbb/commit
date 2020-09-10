@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清除浮动</title>
+    <style>
+        .clearfix:after {
+            content: "";
+            display: block;
+            height: 0;
+            visibility: hidden;
+            clear: both;
+        }
+        .clearfix {
+            /* ie6 7 兼容 */
+            *zoom: 1;
+        }
+        /* 双 */
+        .clearfix:before,
+        .clearfix:after {
+            content: "";
+            display: table;
+        }
+        .clearfix:after {
+            clear: both;
+        }
+        .clearfix:after {
+            *zoom: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- 为什么要清除浮动 -->
+        <!-- 解决父盒子高度为0的子盒子浮动的问题，清除浮动后，根据子盒子给父盒子高度 -->
+    <!-- 清除浮动的方法 -->
+        <!-- 1 额外标签法 在最后一个浮动的后面写一个标签，样式 clear：both  -->
+        <!-- 2 父级添加overflow  有hidden auto scroll 会隐藏溢出-->
+        <!-- 3 after伪元素  -->
+        <!-- 4 双伪元素 -->
+</body>
+</html>

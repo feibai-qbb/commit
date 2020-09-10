@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .one {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: #fff;
+        }
+        .two {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+        }
+        .box {
+            width: 1226px;
+            height: 615px;
+            background-color:pink;
+            margin: auto;
+        }
+        .left {
+            float: left;
+            width: 234px;
+            height: 615px;
+            background-color: #f9f;
+        }
+        .right {
+            float: left;
+            width: 992px;
+            height: 615px;
+            background-color: #888;
+        }
+        .right li {
+            float: left;
+            width: 234px;
+            height: 300px;
+            background-color:pink;
+            list-style: none;
+            margin-left: 14px;
+            margin-bottom: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- css布局机构  -->
+    <!-- 标准流 -->
+    <!-- 浮动 -->
+        <!-- 会脱离标准流的控制，移动到指定位置 -->
+        <!-- float：left right none -->
+        <div class="one"></div>
+        <div class="two"></div>
+        <hr>
+        <div class="box">
+            <div class="left"></div>
+            <ul class="right">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    <!-- 定位 -->
+</body>
+</html>
