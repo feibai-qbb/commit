@@ -1,0 +1,12 @@
+.fixbar {
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    margin-left: -800px;
+    width: 180px;
+    height: 480px;
+    background-color: #fff;
+}
+.fixbar li {
+    margin: 60px;
+}

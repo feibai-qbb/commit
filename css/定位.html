@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位</title>
+    <style>
+        .rel {
+            width: 200px ;
+            height: 200px;
+            background-color: #999;
+            position: relative;
+            top: 100px;
+            left: 100px;
+        }
+        .father {
+            width: 350px;
+            height: 350px;
+            background-color: #888;
+            margin: 100px;
+            position: absolute;
+        }
+        .son {
+            width: 200px;
+            height: 200px;
+            background-color: #333333;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+        .up {
+            position: relative;
+            width: 1000px;
+            height: 90px;
+            background-color: #ccc;
+        }
+        .down {
+            width: 1000px;
+            height: 150px;
+            background-color: wheat;
+        }
+        .arr-l {
+            position: absolute;
+            top: 25px;
+            width: 40px;
+            height: 40px;
+            background-color: red;
+        }
+        .arr-r {
+            position: absolute;
+            top: 25px;
+            right: 0;
+            width: 40px;
+            height: 40px;
+            background-color: red;
+        }
+        .juzhong {
+            position: absolute;
+            /* 父级宽度的一半 */
+            left: 50%;
+            /* 左走自己宽度的一半 */
+            margin-left: -50px;
+            width: 100px;
+            height: 100px;
+            background-color: #222;
+        }
+        .one, .two, .three {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        .two {
+            right: 50px;
+            top: 50px;
+            z-index: 1;
+            background-color: green;
+        }
+        .three {
+            right: 100px;
+            top: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- 边偏移 top bottom left right  -->
+    <!-- 定位模式 position -->
+        <!-- static 静态 -->
+            <!-- 相当于无定位 -->
+        <!-- relative 相对 -->
+            <!-- 相当于原来的位置定位,原来的位置继续占用 -->
+            <div class="rel"></div>
+        <!-- absolute 绝对 -->
+            <!-- 决定定位不保留位置 -->
+            <!-- 如果父盒子没有定位,则以浏览器为定位 -->
+            <!-- 如果父盒子有定位,则以父盒子为定位 -->
+            <!-- 以最近的有定位的盒子为定位 -->
+            <!-- 子绝父相 -->
+            <div class="father">
+                <div class="son"></div>
+            </div>
+            <div class="up">
+                <div class="arr-l"></div>
+                <div class="arr-r"></div>
+            </div>
+            <div class="down"></div>
+            <!-- 定位的盒子居中 -->
+            <div class="juzhong"></div>
+        <!-- flxed 固定 -->
+            <!-- 绝对定位的特殊方式,以浏览器可视区为定位 -->
+        <!-- 堆叠顺序 -->
+            <!-- z-index 值越大越高 只能是整数 -->
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+</body>
+</html>
