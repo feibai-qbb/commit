@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>元素的显示与隐藏</title>
+    <style>
+        .class {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            margin: 100px auto;
+        }
+        .class img {
+            width: 300px;
+            height: 200px;
+        }
+        .mask {
+            position: absolute;
+            display: none;
+            top: 0;
+            left: 0;
+            width: 300px;
+            height: 200px;
+            background: rgba(0, 0, 0, 0.3);
+        }
+        .class a:hover .mask{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- display -->
+        <!-- 隐藏 属性设置为none 先隐藏，不保留位置 -->
+        <!-- 显示 属性设置为block 转换为块，显示元素 -->
+    <!-- visibility -->
+        <!-- hidden 隐藏保留位置 -->
+        <!-- visible 显示 -->
+    <!-- overflow -->
+        <!-- visible 不剪切内容，不加滚动条 -->
+        <!-- hidden 把超出的部分隐藏 -->
+        <!-- scroll 总会加上下滚动条 -->
+        <!-- auto 加滚动条,不超出就不显示滚动条 -->
+    
+    <div class="class">
+        <a href="#">
+            <div class="mask"></div>
+            <img src="../css/st/image/1594038015022.jpg" alt="">    
+        </a>
+    </div>
+</body>
+</html>
