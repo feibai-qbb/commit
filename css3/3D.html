@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D</title>
+    <style>
+        body {
+            perspective: 500px;
+        }
+        .move{
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+            background-color: pink;
+            /* 3D移动 */
+            /* 透视 perspective 写在被观察的父盒子上 */
+            transform: translateZ(200px);
+        }
+        .f {
+            perspective: 500px;
+        }
+        .f img {
+            display: block;
+            width: 400px;
+            height: 300px;
+            margin: 100px auto;
+            transition: all 1s;
+        }
+        .f img:hover {
+            /* transform: rotateX(360deg); */
+            /* transform: rotateY(360deg); */
+            /* transform: rotateZ(360deg); */
+            transform: rotate3d( 1,1,0, 30deg);
+            /* <!-- 子元素开启 3D  --> */
+            transform-style:preserve-3d ;
+        }
+    </style>
+</head>
+<body>
+    <!-- 3D移动 -->
+    <div class="move"></div>
+    <!-- 3D旋转 -->
+    <div class="f">
+        <img src="../html/img/59e0676addbfe.png" alt="">
+    </div>
+</body>
+</html>

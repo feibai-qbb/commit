@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D转换</title>
+    <style>
+        /* 2D转换 */
+        div{
+            position: relative;
+            width: 500px;
+            height: 500px;
+            background-color: #773300;
+            /* 移动 */
+            /* transform 移动不会影响位置 */
+            /* transform: translate(100px,100px); */
+            
+        }
+        div:hover {
+            /* 旋转 */
+            transform: rotate(45deg);
+            /* 旋转中心 */
+            /* transform-origin: left bottom; */
+            /* 过度时间 */
+            transition: all 1s;
+            /* 缩放 */
+            transform: scale(2,2);
+        }
+        p {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            margin-top: 50%;
+            margin-left: 50%; 
+            background-color: #c22;
+            transform: translate(-50%,-50%);
+        }
+        .class {
+            width: 100px;
+            height: 100px;
+            background-color: #776577;
+        }
+        /* 综合写法 */
+        .class:hover {
+            /* 位移要放到最前 */
+            transform: translate(100px ,100px) rotate(180deg) scale(2,2);
+            transition: all 1s;
+        }
+    </style>
+</head>
+<body>
+    <div><p></p></div>
+    <div class="class"></div>
+</body>
+</html>
