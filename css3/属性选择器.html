@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>属性选择器</title>
+    <style>
+        button {
+            cursor: pointer;
+        }
+        /* 属性选择器 权重为10 */
+        button[disabled]{
+            cursor: default;
+        }
+        input[type="search"]{
+            color: blue;
+        }
+        /* 属性^= 选择以开头 */
+        /* 属性$= 以$结尾 */
+        /* 属性*= 包含的 */
+    </style>
+</head>
+<body>
+    <button>按钮</button>
+    <button>按钮</button>
+    <button disabled>按钮</button>
+    <button disabled>按钮</button>
+    <input type="text" name="" id="" value="文本框">
+    <input type="text" name="" id="" value="文本框">
+    <input type="text" name="" id="" value="文本框">
+    <input type="search" name="" id="" value="搜索框">
+    <input type="search" name="" id="" value="搜索框">
+    <input type="search" name="" id="" value="搜索框">
+</body>
+</html>
