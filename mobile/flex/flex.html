@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        div {
+            display: flex;
+            width: 80%;
+            height: 300px;
+            background-color: pink;
+            /* 常见父项属性 */
+            /* 设置主轴方向 row 从左到右 column 从上到下 row-reverse 从右到左 */
+            flex-direction: row;
+            /* 设置主轴上子元素 flex-start 从头开始 flex-end 从尾部开始 center 居中 space-around 平均分配 space-between 两边贴边，再平均 */
+            justify-content: space-between;
+            /* 是否换行 默认不换行 warp 换行 nowarp 换行 */
+            flex-wrap: nowrap;
+            /* 侧轴的排列 stretch 拉伸 center 居中 flex-start 从头开始 flex-end 从尾部开始 */
+            align-items: center;
+            /* 侧行多行 要有换行 stretch 拉伸 center 居中 flex-start 从头开始 flex-end 从尾部开始 space-around 平均分配 space-between 两边贴边，再平均 */
+            align-content: space-between;
+            /* 复合主轴和换行 */
+            flex-flow: row wrap;
+        }
+        div span {
+            height: 50px;
+            background-color: blue;
+            margin-left: 5px;
+            /* 子项属性 */
+            /* flex 占用剩余空间份数 */
+            flex: 1;
+            /* 控制自己在侧轴上的对齐方式 */
+            align-self: center;
+            /* 控制盒子排序 越小越前*/
+            order: 0;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</body>
+</html>

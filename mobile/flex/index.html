@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <style>
+        body {
+            max-width: 540px;
+            min-width: 320px;
+            color: #000;
+            background-color: #f2f2f2f2;
+            overflow-x: hidden;
+            -webkit-tap-highlight-color: transparent;
+            margin: 0 auto;
+            padding: 0;
+        }
+        .search-index {
+            display: flex;
+            position: fixed;
+            top: 0;
+            left: 50%;
+            /* 居中 */
+            transform: translate(-50%);
+            max-width: 540px;
+            min-width: 320px;
+            width: 100%;
+            height: 44px;
+            /* background-color: pink; */
+        }
+        a {
+            text-decoration: none;
+        }
+        div {
+            box-sizing: border-box;
+        }
+        .user {
+            height: 44px;
+            width: 44px;
+            text-align: center;
+            line-height: 44px;
+            color: blue;
+
+        }
+        .search {
+            /* background-color: #444; */
+            flex: 1;
+            margin: 10px 10px;
+            height: 26px;
+            border: 1px solid black;
+            border-radius: 7px;
+        }
+        .slider {
+            padding-top: 44px;
+        }
+        .slider img {
+            max-width: 540px;
+            min-width: 320px;
+            width: 100%;
+
+        }
+        ul {
+            display: flex;
+            height: 64px;
+            background-color: #fff;
+            border-radius: 8px;
+            margin: 4px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        ul li {
+            flex: 1;
+            text-align: center;
+            font-size: 20px;
+            color: cornflowerblue;
+            line-height: 64px;
+        }
+        .main {
+            overflow: hidden;
+            border-radius: 8px;
+            margin: 3px;
+        }
+        .main-commn {
+            display: flex;
+            height: 88px;
+            background-color: pink;
+        }
+        .main-commn:nth-child(2) {
+            margin: 3px 0;
+        }
+        .main-items {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .main-commn .main-items:nth-child(-n+2) {
+            border-right: 1px solid white;
+        }
+        .main-items a {
+            flex: 1;
+            text-align: center;
+            line-height: 44px;
+            color: blueviolet;
+            font-size: 20px;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+        }
+        .main-commn .main-items:nth-child(1) a {
+            border: 0;
+        }
+        .main-items a:nth-child(1) {
+            border-bottom: 1px solid #fff;
+        }
+        /* 背景颜色渐变 */
+        .main-commn:nth-child(1) {
+            background: -webkit-linear-gradient(left,#fa5a5f,#fa99fa)
+        }
+        .main-commn:nth-child(2) {
+            background: -webkit-linear-gradient(left,#44bb99,#53b)
+        }
+        .main-commn:nth-child(3) {
+            background: -webkit-linear-gradient(left,#34c,#6cd)
+        }
+    </style>
+</head>
+<body>
+    <div class="search-index">
+        <div class="search"> 搜索</div>
+        <a href="#" class="user">我的</a>
+    </div>
+    <div class="slider"><img src="../liushi/upload/1594038015022.jpg" alt=""></div>
+    <ul class="nav">
+        <li>风</li>
+        <li>火</li>
+        <li>水</li>
+        <li>光</li>
+        <li>暗</li>
+    </ul>
+    <div class="main">
+        <div class="main-commn">
+            <div class="main-items">
+                <a href="#">潘多拉</a>
+            </div>
+            <div class="main-items">
+                <a href="#">雅典娜</a><a href="#">赫拉</a>
+            </div>
+            <div class="main-items">
+                <a href="#">潘</a><a href="#">普罗米修斯</a>
+            </div>
+        </div>
+        <div class="main-commn">
+            <div class="main-items">
+                <a href="#">潘多拉</a>
+            </div>
+            <div class="main-items">
+                <a href="#">雅典娜</a><a href="#">赫拉</a>
+            </div>
+            <div class="main-items">
+                <a href="#">潘</a><a href="#">普罗米修斯</a>
+            </div>
+        </div>
+        <div class="main-commn">
+            <div class="main-items">
+                <a href="#">潘多拉</a>
+            </div>
+            <div class="main-items">
+                <a href="#">雅典娜</a><a href="#">赫拉</a>
+            </div>
+            <div class="main-items">
+                <a href="#">潘</a><a href="#">普罗米修斯</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
